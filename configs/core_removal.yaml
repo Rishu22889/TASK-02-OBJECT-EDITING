@@ -1,0 +1,24 @@
+# Smallest profile: COCO objects, fixed phrasing, removal only.
+# YOLOv8n-seg + MI-GAN = 33.5 MB of weights, ~1.8 s per image on 2 vCPUs.
+# Replacement still works in composite mode for objects in assets/.
+
+weights_dir: weights
+threads: 0
+
+parser:
+  backend: regex
+
+grounding:
+  coco_weights: yolov8n-seg.pt
+  open_vocab: false
+
+mask:
+  segmenter: seg
+
+inpaint:
+  backend: migan
+
+insert:
+  mode: composite
+  composite_fallback: false       # never load Stable Diffusion in this profile
+  asset_dir: assets

@@ -1,0 +1,18 @@
+pipeline,task,latency_sec,model_size_MB,source,quality
+E0 box + Telea,remove,0.3202655233999697,6.246372222900391,csv,poor: blurry box-shaped smear
+E0 box + paste,replace,0.3802570854000805,6.246372222900391,csv,see result grids
+E1 MobileSAM + Telea,remove,4.431581804299943,45.08783531188965,csv,poor: object-shaped smear
+E1 MobileSAM + paste,replace,4.406118274799883,45.08783531188965,csv,see result grids
+E2-A SD-inpaint only,remove,400.37225833422207,4112.507677078247,log,unreliable: regenerates the removed object
+E2-A SD-inpaint only,replace,419.2025508596665,4112.507677078247,log,unreliable: regenerates the removed object
+E3 MI-GAN,remove,3.441278751666586,71.86622905731201,csv,good on roads/grass; struggles with large masks
+E3 LaMa,remove,12.212815316444397,241.3575096130371,csv,best removal texture; larger and slower
+E4-A: regex + YOLOv8n,remove,6.1492417103336265,71.86622905731201,csv,see result grids
+E4-C: LLM + YOLO-World,remove,14.99371762533307,896.5558938980103,csv,see result grids
+E4-D: LLM + YOLOE-seg,remove,11.89540049477748,1093.9100723266602,csv,see result grids
+E5-A composite,replace,7.544010210333454,72.25979900360107,csv,see result grids
+E5-B SD DPM-10 CFG7.5,replace,448.56271567449994,4139.286070823669,csv,see result grids
+E5-C SD + LCM-LoRA 4 steps,replace,164.93422294749985,4139.286070823669,csv,see result grids
+E5-D SD + LCM-LoRA + TAESD,replace,98.00522409275004,3829.499083518982,csv,see result grids
+E6-final-remove,remove,3.4455496619993937,97.08613872528076,csv,see result grids
+E6-final-replace,replace,80.69856136000028,3854.718993186951,csv,see result grids

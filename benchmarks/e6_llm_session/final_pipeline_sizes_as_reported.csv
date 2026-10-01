@@ -1,0 +1,8 @@
+component,weights_MB_reported
+parser (LLM),468.6
+yolov8n-seg (PyTorch),6.7
+YOLO-World-S + text encoder (open vocab),24.7
+MobileSAM (open-vocab path),38.8
+MI-GAN (ONNX),26.8
+SD-1.5 inpaint UNet (LCM fused) + text encoder,3748.3
+VAE (TAESD or full),9.3

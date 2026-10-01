@@ -1,0 +1,2 @@
+experiment,detector,segmentation,inpainting,operation,model_size_MB,parameters_M,mean_latency_sec,median_latency_sec,std_latency_sec
+E0,YOLOv8n,Bounding Box,OpenCV Telea,Removal,6.25,3.16,0.2049,0.203,0.0075

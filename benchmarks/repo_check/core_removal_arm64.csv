@@ -1,0 +1,11 @@
+image,instruction,repeat,error,action,object,coco_class,which,target,parser,route,insert_mode,parse_sec,detect_sec,segment_sec,remove_sec,insert_sec,total_sec,load_sec,peak_rss_mb,peak_rss_delta_mb
+car_2.jpg,Remove the car,0,,remove,car,car,best,,regex,coco:yolov8n-seg,,0.0,0.0831,0.0,0.467,0.0,0.5501,0.0,991.9,302.8
+car_2.jpg,Remove the car,1,,remove,car,car,best,,regex,coco:yolov8n-seg,,0.0001,0.0765,0.0,0.4106,0.0,0.4873,0.0,1086.3,94.1
+park_2.jpg,Remove the person,0,,remove,person,person,best,,regex,coco:yolov8n-seg,,0.0001,0.0803,0.0001,0.5935,0.0,0.6739,0.0,1039.5,0.0
+park_2.jpg,Remove the person,1,,remove,person,person,best,,regex,coco:yolov8n-seg,,0.0001,0.1108,0.0001,0.5199,0.0,0.6308,0.0,620.0,27.7
+road_2.jpg,Remove the bicycle,0,,remove,bicycle,bicycle,best,,regex,coco:yolov8n-seg,,0.0001,0.1168,0.0001,0.4767,0.0,0.5936,0.0,746.3,145.8
+road_2.jpg,Remove the bicycle,1,,remove,bicycle,bicycle,best,,regex,coco:yolov8n-seg,,0.0001,0.1152,0.0001,0.4125,0.0,0.5278,0.0,711.1,55.6
+cat.jpg,Remove the cat,0,,remove,cat,cat,best,,regex,coco:yolov8n-seg,,0.0,0.0953,0.0001,0.4756,0.0,0.571,0.0,789.7,78.6
+cat.jpg,Remove the cat,1,,remove,cat,cat,best,,regex,coco:yolov8n-seg,,0.0001,0.0856,0.0001,0.4194,0.0,0.5051,0.0,798.0,14.4
+car_2.jpg,Replace the car with a bicycle,0,,replace,car,car,best,bicycle,regex,coco:yolov8n-seg,composite,0.0,0.0611,0.0,0.4049,0.1723,0.6384,0.0004,796.9,0.0
+car_2.jpg,Replace the car with a bicycle,1,,replace,car,car,best,bicycle,regex,coco:yolov8n-seg,composite,0.0,0.0617,0.0,0.4174,0.0288,0.5079,0.0,750.7,16.6

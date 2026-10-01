@@ -1,0 +1,31 @@
+{
+  "final": [
+    {"image": "car_2.jpg", "instruction": "Could you get rid of the dark sedan on the highway?"},
+    {"image": "park.jpg", "instruction": "remove the woman on the left"},
+    {"image": "park_2.jpg", "instruction": "I don't want the man walking in this photo"},
+    {"image": "multi.jpg", "instruction": "remove the hat"},
+    {"image": "multi.jpg", "instruction": "delete the ladder"},
+    {"image": "car_2.jpg", "instruction": "swap the car for a red bicycle"},
+    {"image": "cat.jpg", "instruction": "turn the kitten into a golden retriever puppy"},
+    {"image": "park_2.jpg", "instruction": "replace the man with a dog"}
+  ],
+  "core": [
+    {"image": "car_2.jpg", "instruction": "Remove the car"},
+    {"image": "park_2.jpg", "instruction": "Remove the person"},
+    {"image": "road_2.jpg", "instruction": "Remove the bicycle"},
+    {"image": "cat.jpg", "instruction": "Remove the cat"},
+    {"image": "car_2.jpg", "instruction": "Replace the car with a bicycle"}
+  ],
+  "grounding": [
+    {"image": "car_2.jpg", "instruction": "Could you get rid of the dark sedan on the highway?"},
+    {"image": "park.jpg", "instruction": "remove the woman on the left"},
+    {"image": "park.jpg", "instruction": "erase the man on the right"},
+    {"image": "road.jpg", "instruction": "delete the bike on the right"},
+    {"image": "park_2.jpg", "instruction": "I don't want the man walking in this photo"},
+    {"image": "cat.jpg", "instruction": "make the kitten disappear"},
+    {"image": "multi.jpg", "instruction": "remove the hat"},
+    {"image": "multi.jpg", "instruction": "delete the ladder"},
+    {"image": "multi.jpg", "instruction": "get rid of the scissors"},
+    {"image": "multi.jpg", "instruction": "take out the candle"}
+  ]
+}

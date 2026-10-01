@@ -1,0 +1,8 @@
+# Natural-language parser: Qwen2.5-0.5B-Instruct (Q4_K_M GGUF) on llama.cpp.
+# Prebuilt CPU wheels avoid a ~15 min source build. If none exists for your Python,
+# the parser falls back to the same model via transformers (requirements-diffusion.txt).
+--extra-index-url https://abetlen.github.io/llama-cpp-python/whl/cpu
+--only-binary=llama-cpp-python
+
+llama-cpp-python>=0.3
+huggingface-hub==1.33.0

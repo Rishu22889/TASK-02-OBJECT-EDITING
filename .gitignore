@@ -1,0 +1,24 @@
+# model weights (downloaded by scripts/download_weights.py)
+weights/
+*.pt
+*.onnx
+*.gguf
+*.safetensors
+*.ts
+
+# generated outputs
+outputs/
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+
+# notebooks / os
+.ipynb_checkpoints/
+.DS_Store

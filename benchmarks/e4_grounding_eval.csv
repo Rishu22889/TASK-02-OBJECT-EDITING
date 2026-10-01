@@ -1,0 +1,41 @@
+system,image,instruction,parsed_ok,query,which,n_candidates,found,confidence,parse_ms,detect_ms,text_encode_ms
+A: regex + YOLOv8n,car_2.jpg,Could you get rid of the dark sedan on the highway?,True,car,best,1,True,0.9326183199882507,0.10698899995986721,555.6600459999572,0.0
+B: LLM + YOLOv8n,car_2.jpg,Could you get rid of the dark sedan on the highway?,True,car,best,1,True,0.9326183199882507,10008.91587299975,154.54631400007202,0.0
+C: LLM + YOLO-World,car_2.jpg,Could you get rid of the dark sedan on the highway?,True,sedan,best,1,True,0.18598082661628723,10008.91587299975,1464.2326469997897,145.31880399999864
+D: LLM + YOLOE-seg,car_2.jpg,Could you get rid of the dark sedan on the highway?,True,sedan,best,1,True,0.7620595097541809,10008.91587299975,1941.7523349998191,1189.9088750001283
+A: regex + YOLOv8n,park.jpg,remove the woman on the left,True,person,best,6,True,0.910942018032074,0.09438500001124339,162.5936720001846,0.0
+B: LLM + YOLOv8n,park.jpg,remove the woman on the left,True,person,left,6,True,0.9094647169113159,9494.159578999643,152.74526000030164,0.0
+C: LLM + YOLO-World,park.jpg,remove the woman on the left,True,woman,left,2,True,0.7060954570770264,9494.159578999643,919.4381860002068,145.48961599984978
+D: LLM + YOLOE-seg,park.jpg,remove the woman on the left,True,woman,left,2,True,0.68546462059021,9494.159578999643,2118.0135180002253,1414.0576290001263
+A: regex + YOLOv8n,park.jpg,erase the man on the right,True,person,best,6,True,0.910942018032074,0.10604699991745292,166.10990599974684,0.0
+B: LLM + YOLOv8n,park.jpg,erase the man on the right,True,person,right,6,True,0.910942018032074,4743.011879000278,159.6683220000159,0.0
+C: LLM + YOLO-World,park.jpg,erase the man on the right,True,man,right,1,True,0.8299214839935303,4743.011879000278,917.9413429997112,152.58298699973238
+D: LLM + YOLOE-seg,park.jpg,erase the man on the right,True,man,right,1,True,0.2579399049282074,4743.011879000278,2175.6823360001363,1158.5359740001877
+A: regex + YOLOv8n,road.jpg,delete the bike on the right,True,bicycle,best,3,True,0.8606370091438293,0.1271860000997549,307.9330350001328,0.0
+B: LLM + YOLOv8n,road.jpg,delete the bike on the right,True,bicycle,right,3,True,0.5617942810058594,8265.91279000013,178.99867100004485,0.0
+C: LLM + YOLO-World,road.jpg,delete the bike on the right,True,bike,right,3,True,0.9157024025917053,8265.91279000013,969.8889750002309,151.82219700000132
+D: LLM + YOLOE-seg,road.jpg,delete the bike on the right,True,bike,right,4,True,0.7416571974754333,8265.91279000013,1617.65629599995,900.0681229999827
+A: regex + YOLOv8n,park_2.jpg,I don't want the man walking in this photo,False,,,0,False,,0.30227599972931785,0.0,0.0
+B: LLM + YOLOv8n,park_2.jpg,I don't want the man walking in this photo,True,person,best,1,True,0.9313951134681702,9782.14152999999,186.99753200007763,0.0
+C: LLM + YOLO-World,park_2.jpg,I don't want the man walking in this photo,True,man,best,1,True,0.803770899772644,9782.14152999999,1039.7553759999028,151.4564729995982
+D: LLM + YOLOE-seg,park_2.jpg,I don't want the man walking in this photo,True,man,best,1,True,0.6868350505828857,9782.14152999999,1594.7109439998712,890.0582559999748
+A: regex + YOLOv8n,cat.jpg,make the kitten disappear,False,,,0,False,,0.3025070000148844,0.0,0.0
+B: LLM + YOLOv8n,cat.jpg,make the kitten disappear,True,kite,best,0,False,,10200.863267000386,208.31454399967697,0.0
+C: LLM + YOLO-World,cat.jpg,make the kitten disappear,True,kitten,best,1,True,0.621529221534729,10200.863267000386,1097.0195170002626,170.2688750001471
+D: LLM + YOLOE-seg,cat.jpg,make the kitten disappear,True,kitten,best,1,True,0.6329207420349121,10200.863267000386,1661.545328000102,893.7578439999925
+A: regex + YOLOv8n,multi.jpg,remove the hat,True,none,best,0,False,,0.18095000041284948,0.010597000255074818,0.0
+B: LLM + YOLOv8n,multi.jpg,remove the hat,True,none,best,0,False,,7457.434518999889,0.006586999916180503,0.0
+C: LLM + YOLO-World,multi.jpg,remove the hat,True,hat,best,0,False,,7457.434518999889,1047.129670999766,160.9304969997538
+D: LLM + YOLOE-seg,multi.jpg,remove the hat,True,hat,best,0,False,,7457.434518999889,1622.0490559999234,864.0884880001067
+A: regex + YOLOv8n,multi.jpg,delete the ladder,True,none,best,0,False,,0.09478399988438468,0.015272999917215202,0.0
+B: LLM + YOLOv8n,multi.jpg,delete the ladder,True,none,all,0,False,,4721.7488660003255,0.010929999916697852,0.0
+C: LLM + YOLO-World,multi.jpg,delete the ladder,True,ladder,all,1,True,0.05089864879846573,4721.7488660003255,1252.6121130003958,173.63630199997715
+D: LLM + YOLOE-seg,multi.jpg,delete the ladder,True,ladder,all,0,False,,4721.7488660003255,2511.0948490000737,1337.9685730001256
+A: regex + YOLOv8n,multi.jpg,get rid of the scissors,True,scissors,best,1,True,0.30659961700439453,0.08900800003175391,279.868537999846,0.0
+B: LLM + YOLOv8n,multi.jpg,get rid of the scissors,True,scissors,best,1,True,0.30659961700439453,8276.254008999786,174.4778700003735,0.0
+C: LLM + YOLO-World,multi.jpg,get rid of the scissors,True,scissors,best,4,True,0.7359962463378906,8276.254008999786,1144.7876379997979,152.90341499985516
+D: LLM + YOLOE-seg,multi.jpg,get rid of the scissors,True,scissors,best,4,True,0.7855551242828369,8276.254008999786,1655.3934220000883,894.2880399999922
+A: regex + YOLOv8n,multi.jpg,take out the candle,True,none,best,0,False,,0.08567600025344291,0.007406999884551624,0.0
+B: LLM + YOLOv8n,multi.jpg,take out the candle,True,none,all,0,False,,9868.910136000068,0.006600000233447645,0.0
+C: LLM + YOLO-World,multi.jpg,take out the candle,True,candle,all,1,True,0.09893697500228882,9868.910136000068,1031.8782019999162,150.1843870000812
+D: LLM + YOLOE-seg,multi.jpg,take out the candle,True,candle,all,0,False,,9868.910136000068,1741.8299859996296,939.1365510000469

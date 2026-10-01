@@ -1,0 +1,9 @@
+image,instruction,route,total_sec,peak_rss_mb,error
+car_2.jpg,Could you get rid of the dark sedan on the highway?,coco -> yolov8n-seg,11.44,8770,
+park.jpg,remove the woman on the left,coco -> yolov8n-seg,6.24,8771,
+park_2.jpg,I don't want the man walking in this photo,coco -> yolov8n-seg,11.42,8776,
+multi.jpg,remove the hat,,,,Could not find 'hat' in the image
+multi.jpg,delete the ladder,open-vocab -> YOLO-World + MobileSAM,12.77,9416,
+car_2.jpg,swap the car for a red bicycle,coco -> yolov8n-seg,85.73,9497,
+cat.jpg,turn the kitten into a golden retriever puppy,open-vocab -> YOLO-World + MobileSAM,91.47,9487,
+park_2.jpg,replace the man with a dog,open-vocab -> YOLO-World + MobileSAM,86.46,9467,

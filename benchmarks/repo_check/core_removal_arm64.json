@@ -1,0 +1,46 @@
+{
+  "system": {
+    "cpu": "arm",
+    "logical_cores": 8,
+    "threads_used": 8,
+    "ram_gb": 8.0,
+    "python": "3.13.12",
+    "opencv": "5.0.0",
+    "torch": "2.14.1",
+    "onnxruntime": "1.30.0",
+    "ultralytics": "8.4.171"
+  },
+  "weights_mb": {
+    "parser": 0.0,
+    "coco_detector": 6.74,
+    "inpainter": 26.78,
+    "asset_library": 0.39
+  },
+  "load_sec": {
+    "parser": 0.0,
+    "coco_detector": 0.13,
+    "inpainter": 0.13,
+    "asset_library": 0.0
+  },
+  "summary": {
+    "remove": {
+      "parse_sec": 0.0,
+      "detect_sec": 0.095,
+      "segment_sec": 0.0,
+      "remove_sec": 0.472,
+      "insert_sec": 0.0,
+      "total_sec": 0.567,
+      "cases": 8
+    },
+    "replace": {
+      "parse_sec": 0.0,
+      "detect_sec": 0.061,
+      "segment_sec": 0.0,
+      "remove_sec": 0.411,
+      "insert_sec": 0.101,
+      "total_sec": 0.573,
+      "cases": 2
+    },
+    "failures": 0
+  }
+}

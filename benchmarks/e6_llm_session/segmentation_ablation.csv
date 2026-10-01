@@ -1,0 +1,6 @@
+image,class,mask_iou_vs_sam,yolo+mobilesam_ms,yolov8n_seg_ms
+car_2.jpg,car,0.948,6210.742,447.921
+car.jpg,car,0.934,7155.858,1438.381
+park_2.jpg,person,0.903,8407.23,502.546
+road_2.jpg,bicycle,0.823,10866.83,1002.899
+cat.jpg,cat,0.915,7836.137,533.412

@@ -1,0 +1,48 @@
+# Final pipeline (see docs/benchmark_report.md; the benchmarked runs used `parser.backend: llm`).
+# Paths without a directory are looked up in `weights_dir` and downloaded on first use.
+
+weights_dir: weights
+threads: 0          # 0 = all logical cores
+device: cpu
+
+parser:
+  backend: cascade                # cascade: regex first, LLM only for unusual phrasing | llm (regex fallback) | regex
+  class_mapping: alias            # alias: map the LLM's free-text object | llm: trust its class label
+  gguf_repo: Qwen/Qwen2.5-0.5B-Instruct-GGUF
+  gguf_quant: q4_k_m
+  hf_repo: Qwen/Qwen2.5-0.5B-Instruct   # used only if llama-cpp-python is not installed
+  n_ctx: 2048
+  max_tokens: 200
+
+grounding:
+  coco_weights: yolov8n-seg.pt    # box + mask in one pass
+  conf: 0.25
+  imgsz: 640
+  open_vocab: true                # YOLO-World fallback for non-COCO objects
+  open_vocab_weights: yolov8s-worldv2.pt
+  open_vocab_conf: 0.15
+  open_vocab_min_conf: 0.05
+  min_rel_area: 0.2
+
+mask:
+  segmenter: seg                  # seg | mobilesam
+  mobile_sam_weights: mobile_sam.pt
+  grow: 15
+  shadow_ratio: 0.15
+
+inpaint:
+  backend: migan                  # migan | lama
+  migan_weights: migan_pipeline_v2.onnx
+  lama_weights: big-lama.pt
+
+insert:
+  mode: diffusion                 # diffusion | composite
+  composite_fallback: true        # composite mode: diffuse targets that have no asset
+  sd_model: stable-diffusion-v1-5/stable-diffusion-inpainting
+  lcm_lora: latent-consistency/lcm-lora-sdv1-5
+  tiny_vae: madebyollin/taesd
+  steps: 4
+  guidance: 1.0
+  size: 512
+  seed: 42
+  asset_dir: assets

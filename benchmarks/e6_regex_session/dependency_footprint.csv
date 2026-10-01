@@ -1,0 +1,21 @@
+package,role,installed_MB
+torch,core,669.1670255661011
+opencv-contrib-python,core,214.10723495483398
+opencv-python,core,196.3656005859375
+opencv-python-headless,core,161.81370162963867
+llama-cpp-python,parser,66.89511680603027
+onnxruntime,core,64.81052017211914
+numpy,core,52.44023609161377
+transformers,parser/diffusion,47.087257385253906
+diffusers,diffusion,24.763222694396973
+pillow,core,16.72499656677246
+tokenizers,parser/diffusion,11.15917682647705
+timm,segmentation,8.87702465057373
+ultralytics,detection,8.261743545532227
+huggingface-hub,diffusion,6.376521110534668
+torchvision,core,5.814543724060059
+peft,diffusion (LoRA load only),5.677853584289551
+accelerate,diffusion,1.484018325805664
+clip,open-vocab,1.4212884902954102
+safetensors,diffusion,1.2759332656860352
+mobile-sam,segmentation,0.2911396026611328

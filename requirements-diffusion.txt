@@ -1,0 +1,7 @@
+# Text-defined replacement: SD-1.5 inpainting + LCM-LoRA + TAESD (benchmarked versions).
+diffusers==0.40.0
+transformers==5.17.0
+accelerate==1.15.0
+peft==0.21.0          # loads the LCM-LoRA before it is fused into the UNet
+safetensors==0.8.0
+huggingface-hub==1.33.0
